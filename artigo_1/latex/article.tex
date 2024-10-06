@@ -1,0 +1,154 @@
+\documentclass[12pt]{article}
+\usepackage[portuguese, english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[a4paper, left=3cm, right=2cm, top=3cm, bottom=2cm]{geometry}
+\usepackage{authblk}
+\usepackage{cite}
+\usepackage{fontspec}
+\usepackage[toc]{glossaries}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{subcaption}
+\usepackage{verbatimbox}
+\usepackage[dvipsnames]{xcolor}
+\newcommand\myshade{85}
+\newcommand{\pprime}{\ensuremath{^{\prime}}}
+\addto\captionsportuguese{\renewcommand*\contentsname{Sumário}}
+\colorlet{mylinkcolor}{violet}
+\colorlet{mycitecolor}{YellowOrange}
+\colorlet{myurlcolor}{Aquamarine}
+
+\hypersetup{
+    pdftitle={Trabalho Remoto e e-Working - Uma Análise dos Efeitos na Rotina Pessoal, Saúde Mental e Bem-Estar do Trabalhador},
+    pdfauthor={Pedro Santi Binotto},
+    pdfsubject={Este artigo busca explorar os impactos psicológicos, comportamentais e sociais da adoção do trabalho
+    remoto em larga escala e seus efeitos a longo prazo.},
+    linkcolor  = mylinkcolor!\myshade!black,
+    citecolor  = mycitecolor!\myshade!black,
+    urlcolor   = myurlcolor!\myshade!black,
+    colorlinks = true,
+    filecolor=black,        % color of file links
+    linktoc=page            % only page is linked
+}%
+
+\newglossaryentry{ict} {
+  name={ICT},
+  description={
+    Tecnologia da Informação e Comunicação (\textbf{ICT}, do inglês: \textit{Information and Communications Technology},
+    ou \textbf{TIC}, em português) é um termo extensional para tecnologia da informação (\textbf{TI}) que enfatiza o papel das comunicações
+    unificadas e a integração de telecomunicações (linhas telefônicas e sinais sem fio) e computadores, bem como software
+    empresarial necessário, middleware, armazenamento e audiovisual, que permitem aos usuários acessar, armazenar, transmitir,
+    entender e manipular informações \cite{techTarget2023}.
+  }
+}
+
+\addto\captionsportuguese{\renewcommand*\contentsname{Sumário}}
+\onehalfspacing
+
+\selectlanguage{portuguese} 
+\title{%
+   Trabalho Remoto e e-Working\\
+   \large Uma Análise dos Efeitos na Rotina Pessoal, Saúde Mental e Bem-Estar do Trabalhador }
+\author[1]{Pedro Santi Binotto [20200634]\thanks{\texttt{pedro.binotto@grad.ufsc.br}}}
+\date{\today}
+\affil[1]{Departamento de Informática e Estatística, Universidade Federal de Santa Catarina}
+
+\makeglossaries
+
+\begin{document}
+\selectlanguage{portuguese} 
+\begin{titlepage}
+\maketitle
+\thispagestyle{empty}
+
+\begin{abstract} \noindent
+  O trabalho das modalidades remota e híbrida tem visto crescimento considerável nos últimos anos, 
+  especialmente acelerado em consequência das medidas tomadas por empregadores e instituições governamentais em resposta
+  à pandemia de COVID-19 no início desta década. Segundo análises de mercado recentes, para setores da economia do
+  conhecimento como TI e finanças, vagas completamente remotas representam a maioria absoluta
+  do mercado de trabalho em países desenvolvidos (\textit{McKinsey \& Co.}, 2022). Em vista da mudança radical na % TODO : try to inline citation 
+  relação das pessoas com o trabalho causada por essa nova dinâmica, este artigo busca explorar os impactos psicológicos,
+  comportamentais e sociais da adoção do trabalho remoto em larga escala e seus efeitos a longo prazo.
+\end{abstract}
+
+\end{titlepage}
+
+\newpage
+\tableofcontents
+
+\newpage
+\printglossary[title=Glossário, toctitle=Glossário]
+
+\newpage
+\section{Introdução}
+
+As modalidades de teletrabalho, caracterizadas pela flexibilização do local de trabalho \cite{ilo2020} de forma a
+permitir que o empregado realize suas atividades de uma locação remota, externa aos escritórios e complexos de produção
+corporativos, tem sido uma realidade desde a viabilização e popularização das \gls{ict}s  \cite{diMartino1990} no
+decorrer dos últimos trinta anos \cite{jit2012}, e desde a pandemia de COVID-19, tornou-se comum para uma grande parcela
+da força de trabalho de diversas regiões do planeta \cite{apolloTechnical2024}. Este fenômeno tem sido
+extensivamente analisado sob perspectivas do empregador \cite{hofschulteBeck2022,sustainability2022} assim como do
+empregado \cite{ijerph2021,ntwe2017} de maneira que o resultado destes estudos apresenta uma percepção variada dos
+efeitos positivos assim como negativos por ambas as partes.
+
+É no contexto destes estudos que este artigo propõe uma visão geral sintetizada dos efeitos psicológicos cotidianos percebidos
+principalmente do referencial do empregado remoto ou híbrido, focando na sustentabilidade e viabilidade dos hábitos
+desenvolvidos e analisando os impactos identificados nos padrões de comportamento observados no dia-a-dia do
+trabalhador.
+
+\section{Desenvolvimento}
+\subsection{Teoria e evidências}
+
+O embasamento teórico para este artigo foi compilado de múltiplos estudos tratando dos sustentabilidade e bem-estar no 
+contexto de trabalho remoto conduzidos nos últimos dez anos \cite{mckinsey2022,ijerph2021,ntwe2017,forbes2023},
+levando em conta análises da situação pré pandêmica \cite{ntwe2017} assim como estudos conduzidos durante e após a
+adoção em massa do teletrabalho durante a pandemia\cite{mckinsey2022,ijerph2021,sustainability2022}. 
+
+\subsection{Adoção do trabalho remoto}
+\subsubsection{Pré-pandemia}
+
+Os resultados iniciais dos estudos de ambos os períodos indicam as mesmas tendências à curto prazo: as facilidades associadas à
+``não-necessidade'' do deslocamento e a flexibilização do espaço de trabalho são refletidas claramente de maneira positiva,
+sendo observável em índices elevados de produtividade e compromisso com o trabalho \cite{ntwe2017} por parte dos
+empregados. É importante notar que, de modo geral, o trabalho remoto foi historicamente tratado como um privilégio ou ``luxo'' de
+determinado empregado antes do \textit{boom} mundial da pandemia de coronavírus em março de 2020 
+\cite{ntwe2017,sustainability2022,diMartino1990}. Inversamente, estudos conduzidos após este período refletem a mudança
+de contexto trazida pela pandemia e reconhecem a normalização desta modalidade de trabalho
+\cite{hofschulteBeck2022,sustainability2022}.
+
+\subsubsection{Adoção do trabalho remoto durante a pandemia de COVID-19}
+
+No decorrer da pandemia, observamos o trabalho remoto na forma de \textit{home office} tornar-se um ``novo
+normal'' compulsório para a uma parcela considerável da população economicamente ativa por um período mais longo do que
+anteriormente observado \cite{mckinsey2022,sustainability2022,phillips2020}. Assim, ficaram claros alguns dos efeitos adversos da forma com
+que o trabalho remoto tem sido conduzido desde então: em muitos casos, o trabalho exclusivamente remoto durante
+períodos estendidos está correlacionado à níveis de estresse elevados, redução do equilíbrio entre vida pessoal e profissional,
+assim como redução da percepção de satisfação profissional \cite{ijerph2021,forbes2023}. Apesar disso, nota-se que o trabalho
+remoto mantém a correlação com níveis mais altos de engajamento e rendimento profissional \cite{ijerph2021,ntwe2017}.
+Não obstante, empregadores ainda reportam desafios ao se adaptar à nova realidade dessa espécie de trabalho, adotando
+novas medidas de monitoramento motivadas pela percepção de uma linha de comunicação enfraquecida e/ou falta de observabilidade
+sobre os empregados \cite{hofschulteBeck2022}.
+
+\subsubsection{Impacto psicológico do trabalho remoto por períodos estendidos}
+
+
+
+% - Pontuar isolamento social, switch-off, etc...
+% - Definir persona do trabalhador remoto
+% - Relacionar com profissao de TI, outsourcing/offshoring
+% - perspectivas futuras
+
+\section{Conclusão}
+\paragraph{}
+
+Conteúdo de parágrafo
+
+\newpage
+\section{Referências Bibliográficas}
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}
+
+

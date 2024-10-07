@@ -15,18 +15,15 @@
 \newcommand\myshade{85}
 \newcommand{\pprime}{\ensuremath{^{\prime}}}
 \addto\captionsportuguese{\renewcommand*\contentsname{Sumário}}
-\colorlet{mylinkcolor}{violet}
-\colorlet{mycitecolor}{YellowOrange}
-\colorlet{myurlcolor}{Aquamarine}
 
 \hypersetup{
     pdftitle={Trabalho Remoto e e-Working - Uma Análise dos Efeitos na Rotina Pessoal, Saúde Mental e Bem-Estar do Trabalhador},
     pdfauthor={Pedro Santi Binotto},
     pdfsubject={Este artigo busca explorar os impactos psicológicos, comportamentais e sociais da adoção do trabalho
     remoto em larga escala e seus efeitos a longo prazo.},
-    linkcolor  = mylinkcolor!\myshade!black,
-    citecolor  = mycitecolor!\myshade!black,
-    urlcolor   = myurlcolor!\myshade!black,
+    linkcolor  = black,
+    citecolor  = black,
+    urlcolor   = black,
     colorlinks = true,
     filecolor=black,        % color of file links
     linktoc=page            % only page is linked
@@ -40,6 +37,15 @@
     unificadas e a integração de telecomunicações (linhas telefônicas e sinais sem fio) e computadores, bem como software
     empresarial necessário, middleware, armazenamento e audiovisual, que permitem aos usuários acessar, armazenar, transmitir,
     entender e manipular informações \cite{techTarget2023}.
+  }
+}
+
+\newglossaryentry{teletrabalho} {
+  name={teletrabalho},
+  description={
+    Modalidades de trabalho caracterizadas pela flexibilização do local de trabalho de forma a permitir que o empregado
+    realize suas atividades de uma locação remota, externa aos escritórios e/ou complexos de produção corporativos
+    \cite{ilo2020,diMartino1990}.
   }
 }
 
@@ -83,11 +89,9 @@
 \newpage
 \section{Introdução}
 
-As modalidades de teletrabalho, caracterizadas pela flexibilização do local de trabalho \cite{ilo2020} de forma a
-permitir que o empregado realize suas atividades de uma locação remota, externa aos escritórios e complexos de produção
-corporativos, tem sido uma realidade desde a viabilização e popularização das \gls{ict}s  \cite{diMartino1990} no
-decorrer dos últimos trinta anos \cite{jit2012}, e desde a pandemia de COVID-19, tornou-se comum para uma grande parcela
-da força de trabalho de diversas regiões do planeta \cite{apolloTechnical2024}. Este fenômeno tem sido
+Diferentes modalidades de \gls{teletrabalho} têm sido realidade desde a viabilização e popularização das \gls{ict}s
+\cite{diMartino1990} no decorrer dos últimos trinta anos \cite{jit2012}, e desde a pandemia de COVID-19, tornou-se comum
+para uma grande parcela da força de trabalho de diversas regiões do planeta \cite{apolloTechnical2024}. Este fenômeno tem sido
 extensivamente analisado sob perspectivas do empregador \cite{hofschulteBeck2022,sustainability2022} assim como do
 empregado \cite{ijerph2021,ntwe2017} de maneira que o resultado destes estudos apresenta uma percepção variada dos
 efeitos positivos assim como negativos por ambas as partes.
@@ -103,7 +107,7 @@ trabalhador.
 O embasamento teórico para este artigo foi compilado de múltiplos estudos tratando dos sustentabilidade e bem-estar no 
 contexto de trabalho remoto conduzidos nos últimos dez anos \cite{mckinsey2022,ijerph2021,ntwe2017,forbes2023},
 levando em conta análises da situação pré pandêmica \cite{ntwe2017} assim como estudos conduzidos durante e após a
-adoção em massa do teletrabalho durante a pandemia\cite{mckinsey2022,ijerph2021,sustainability2022}. 
+adoção em massa do \gls{teletrabalho} durante a pandemia\cite{mckinsey2022,ijerph2021,sustainability2022}. 
 
 \subsection{Adoção do trabalho remoto}
 \subsubsection{Pré-pandemia}
@@ -124,29 +128,65 @@ normal'' compulsório para a uma parcela considerável da população economicam
 anteriormente observado \cite{mckinsey2022,sustainability2022,phillips2020}. Assim, ficaram claros alguns dos efeitos adversos da forma com
 que o trabalho remoto tem sido conduzido desde então: em muitos casos, o trabalho exclusivamente remoto durante
 períodos estendidos está correlacionado à níveis de estresse elevados, redução do equilíbrio entre vida pessoal e profissional,
-assim como redução da percepção de satisfação profissional \cite{ijerph2021,forbes2023}. Apesar disso, nota-se que o trabalho
-remoto mantém a correlação com níveis mais altos de engajamento e rendimento profissional \cite{ijerph2021,ntwe2017}.
-Não obstante, empregadores ainda reportam desafios ao se adaptar à nova realidade dessa espécie de trabalho, adotando
-novas medidas de monitoramento motivadas pela percepção de uma linha de comunicação enfraquecida e/ou falta de observabilidade
-sobre os empregados \cite{hofschulteBeck2022}.
+assim como redução da percepção de satisfação profissional \cite{ijerph2021,forbes2023}.
+
+Apesar disso, nota-se que o trabalho remoto mantém a correlação com níveis mais altos de engajamento e rendimento profissional
+\cite{ijerph2021,ntwe2017}. Não obstante, empregadores ainda reportam desafios ao se adaptar à nova realidade dessa espécie
+de trabalho, buscando adotar novas medidas de monitoramento motivadas pela percepção de uma linha de comunicação enfraquecida
+e/ou falta de observabilidade sobre os empregados \cite{hofschulteBeck2022}. 
 
 \subsubsection{Impacto psicológico do trabalho remoto por períodos estendidos}
 
+Diante desta situação, muitos profissionais remotos reportam a ocorrência de episódios de \textit{burnout} profissional
+associado ao constante fluxo de informação através de ferramentas de comunicação (\gls{ict}s), alegando a sensação
+de microgerenciamento por parte de seu empregador \cite{forbes2023}.
 
+No campo de trabalho de TI, particularmente na área de desenvolvimento de software, existem estudos mapeando elementos da cultura
+corporativa que contribuem para um ambiente de alta tensão relacionados ao microgerenciamento de funcionários e a sensação
+de uma falta de segurança profissional \cite{trinkenreichorganization}; tais fatores são apenas exacerbados em cenários
+de trabalho remoto que apresentem uma herança cultural destes ambientes \cite{ijerph2021}.
 
-% - Pontuar isolamento social, switch-off, etc...
-% - Definir persona do trabalhador remoto
-% - Relacionar com profissao de TI, outsourcing/offshoring
-% - perspectivas futuras
+Recursos a respeito dos efeitos provenientes de atividades exclusivamente remotas são abundantes; sensação de
+isolamento, dificuldade de acesso à recursos de conhecimento e a percepção de estagnação em relação à progressão de
+carreira ou falta de reconhecimento profissional foram alguns dos relatos mais comuns de empregados remotos durante o
+período exclusivamente remoto da pandemia \cite{ijerph2021,forbes2023,hofschulteBeck2022}. 
+
+Empregados que possuem cargos de maior responsabilidade também frequentemente reportam dificuldade de se desligar do trabalho
+após o expediente, ou que sentem pressão para se fazerem disponíveis em horários fora de sua jornada de trabalho \cite{ijerph2021}.
+A combinação destes fatores contribui para o agravamento da sensação de instabilidade, ansiedade, ou falta de segurança
+profissional que pode ser observada nos resultados de estudos referentes ao período de trabalho remoto compulsório na pandemia
+de COVID-19 \cite{ijerph2021}.
 
 \section{Conclusão}
-\paragraph{}
 
-Conteúdo de parágrafo
+Após análise dos dados provenientes dos estudos conduzidos, podemos concluir que a possibilidade de realizar as tarefas
+remotamente é um passo em direção de um maior nível de liberdade e dignidade para o trabalhador; no entanto, o
+movimento de universalização do trabalho na modalidade exclusivamente remota e a falta de um
+ambiente dedicado ao trabalho podem ser um agravante para uma relação abusiva para com o trabalho. A oferta de um ambiente
+de trabalho digno assim como os meios para o deslocamento do funcionário até sua estação de serviço compõem a estrutura
+de suporte ao profissional tanto quanto os demais direitos trabalhistas e devem ser defendidos como tais. 
+
+O período da pandemia provou que o trabalho remoto é não apenas possível, como viável e, para muitos, preferível ou
+mesmo necessário; oferece, também, benefícios observáveis da perspectiva do empregador \cite{sustainability2022}.
+Por estes motivos, deve ser ofertado sempre que possível para os funcionários e empregadores que podem beneficiar-se
+dessa modalidade. 
+
+A adoção compulsória de atividades exclusivamente remotas, no entanto, está relacionada à agravação de ansiedades
+relacionadas ao trabalho e à precarização de condições serviço, assim como estagnação e a sensação de
+isolamento profissional \cite{ijerph2021,forbes2023}.
+
+A causa dos sentimentos de ansiedade pode estar associada não apenas à natureza do trabalho à distância, mas principalmente
+ao modelo de avaliação e supervisão profissional atualmente observado em ambientes de trabalho principalmente nas áreas
+de atuação profissional psicológica e/ou técnica \cite{trinkenreichorganization}; isto, juntamente ao isolamento profissional
+por períodos estendidos, tem sido associado à deterioração dos níveis de bem-estar psicológico dos empregados
+\cite{tulili2023burnout}, evidenciando a necessidade da formalização e aplicação de  padrões de regimento profissional
+que garantam que a adoção desta nova dinâmica de trabalho ocorra forma ética, levando em consideração a saúde
+psicológica do trabalhador e os possíveis efeitos psicossomáticos desencadeados pela implementação incorreta do
+\gls{teletrabalho}.
 
 \newpage
 \section{Referências Bibliográficas}
-\bibliographystyle{plain}
+\bibliographystyle{apalike}
 \bibliography{references}
 
 \end{document}

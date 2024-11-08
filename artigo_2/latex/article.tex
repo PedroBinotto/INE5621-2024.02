@@ -3,52 +3,95 @@
 \usepackage[T1]{fontenc}
 \usepackage[a4paper, left=3cm, right=2cm, top=3cm, bottom=2cm]{geometry}
 \usepackage{authblk}
+\usepackage{cite}
 \usepackage{fontspec}
+\usepackage[toc]{glossaries}
 \usepackage{graphicx}
+\usepackage{hyperref}
 \usepackage{setspace}
 \usepackage{subcaption}
 \usepackage{verbatimbox}
-
+\usepackage[dvipsnames]{xcolor}
+\newcommand\myshade{85}
+\newcommand{\pprime}{\ensuremath{^{\prime}}}
 \addto\captionsportuguese{\renewcommand*\contentsname{Sumário}}
-\setcounter{secnumdepth}{0}
-\onehalfspacing
+\newcommand{\RNum}[1]{\uppercase\expandafter{\romannumeral #1\relax}}
 
-\title{Título de Artigo}
+\hypersetup{
+    pdftitle={Consequências da dependência tecnológica do indivíduo moderno - Um ensaio analítico e reflexão sobre perspectivas futuras},
+    pdfauthor={Autor Anônimo},
+    pdfsubject={Este artigo tem como propósito explorar as consequências associadas à crescente dependência tecnológica
+    do indivíduo moderno na sociedade contemporânea.},
+    linkcolor  = black,
+    citecolor  = black,
+    urlcolor   = black,
+    colorlinks = true,
+    filecolor=black,        % color of file links
+    linktoc=page            % only page is linked
+}%
+
+\newglossaryentry{ict} {
+  name={ICT},
+  description={
+    Tecnologia da Informação e Comunicação (\textbf{ICT}, do inglês: \textit{Information and Communications Technology},
+    ou \textbf{TIC}, em português) é um termo extensional para tecnologia da informação (\textbf{TI}) que enfatiza o papel das comunicações
+    unificadas e a integração de telecomunicações (linhas telefônicas e sinais sem fio) e computadores, bem como software
+    empresarial necessário, middleware, armazenamento e audiovisual, que permitem aos usuários acessar, armazenar, transmitir,
+    entender e manipular informações \cite{techTarget2023}.
+  }
+}
+
+\newglossaryentry{dependencia} {
+  name={Dependência Tecnológica},
+  description={
+    O termo ``\textbf{dependência tecnológica}'', como empregado neste artigo, refere-se principalmente à relação de um
+    indivíduo ou comunidade com algum recurso tecnológico ou provedor deste recurso, de modo que a relação desenvolvida
+    caracterize uma espécie de natureza assimétrica \cite[1]{secretariat1977}, ou seja, na qual o indivíduo (ou
+    comunidade) depende do recurso e/ou provedor de forma unilateral. Relações desta espécie frequentemente estão
+    ligadas ao uso de tecnologias que dependem, de alguma forma, da relação com alguma organização de larga escala
+    (\textit{organization-dependent technology} \cite[\S207-212]{kaczynski1995}) que possibilita a adoção desta
+    tecnologia; desta maneira, o indivíduo (ou pequena comunidade) está a mercê da organização de larga escala à partir
+    do momento que depende desta tecnologia para algum fim.
+  }
+}
+
+\title{%
+    Consequências da dependência tecnológica do indivíduo moderno\\
+   \large Um ensaio analítico e reflexão sobre perspectivas futuras}
 \author[1]{Autor Anônimo}
 \date{\today}
 \affil[1]{Departamento de Informática e Estatística, Universidade Federal de Santa Catarina}
 
+\makeglossaries
+
 \begin{document}
-\begin{titlepage}
 \selectlanguage{portuguese} 
+\begin{titlepage}
 \maketitle
 \thispagestyle{empty}
 
 \begin{abstract}
-    Resumo em Português
+  Este artigo tem como propósito explorar as consequências associadas à crescente dependência tecnológica do indivíduo
+  moderno na sociedade contemporânea e como estas consequências se equiparam aos desenvolvimentos oriundos da
+  modernização da civilização humana desde a primeira revolução industrial, dando atenção especial à forma que a aceleração 
+  do avanço tecnológico pode agravar a marginalização e isolamento social de grupos digitalmente desfavorecidos e desencorajar a 
+  autonomia do indivíduo e sua escolha em ativamente exercer suas funções na sociedade de forma saudável.
 \end{abstract}
 
-\selectlanguage{english} 
-\begin{abstract}
-    Abstract in English
-\end{abstract}
 \end{titlepage}
 
-\selectlanguage{portuguese} 
-
-\newpage
 \tableofcontents
 
-\newpage
-\section{Nome de secção}
-\subsection{Subsecção}
-\paragraph{}
+\printglossary[title=Glossário, toctitle=Glossário]
 
-Conteúdo de parágrafo
+\newpage
+
+\input{Content/Introducao}
+\input{Content/Desenvolvimento}
 
 \newpage
 \section{Referências Bibliográficas}
-\bibliographystyle{plain}
+\bibliographystyle{apalike}
 \bibliography{references}
 
 \end{document}

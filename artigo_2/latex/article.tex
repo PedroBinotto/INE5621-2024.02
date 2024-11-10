@@ -1,4 +1,5 @@
 \documentclass[12pt]{article}
+
 \usepackage[portuguese, english]{babel}
 \usepackage[T1]{fontenc}
 \usepackage[a4paper, left=3cm, right=2cm, top=3cm, bottom=2cm]{geometry}
@@ -12,22 +13,24 @@
 \usepackage{subcaption}
 \usepackage{verbatimbox}
 \usepackage[dvipsnames]{xcolor}
+
+\addto\captionsportuguese{\renewcommand*\contentsname{Sumário}}
+
 \newcommand\myshade{85}
 \newcommand{\pprime}{\ensuremath{^{\prime}}}
-\addto\captionsportuguese{\renewcommand*\contentsname{Sumário}}
 \newcommand{\RNum}[1]{\uppercase\expandafter{\romannumeral #1\relax}}
 
 \hypersetup{
-    pdftitle={Consequências da dependência tecnológica do indivíduo moderno - Um ensaio analítico e reflexão sobre perspectivas futuras},
-    pdfauthor={Autor Anônimo},
-    pdfsubject={Este artigo tem como propósito explorar as consequências associadas à crescente dependência tecnológica
+    pdftitle   = {Consequências da dependência tecnológica do indivíduo moderno - Um ensaio analítico e reflexão sobre perspectivas futuras},
+    pdfauthor  = {Autor Anônimo},
+    pdfsubject = {Este artigo tem como propósito explorar as consequências associadas à crescente dependência tecnológica
     do indivíduo moderno na sociedade contemporânea.},
     linkcolor  = black,
     citecolor  = black,
     urlcolor   = black,
     colorlinks = true,
-    filecolor=black,        % color of file links
-    linktoc=page            % only page is linked
+    filecolor  = black,
+    linktoc    = page
 }%
 
 \newglossaryentry{ict} {
@@ -56,8 +59,9 @@
 }
 
 \title{%
-    Consequências da dependência tecnológica do indivíduo moderno\\
-   \large Um ensaio analítico e reflexão sobre perspectivas futuras}
+  Consequências da dependência tecnológica do indivíduo moderno\\
+  \large Um ensaio analítico e reflexão sobre perspectivas futuras
+}
 \author[1]{Autor Anônimo}
 \date{\today}
 \affil[1]{Departamento de Informática e Estatística, Universidade Federal de Santa Catarina}
@@ -88,6 +92,7 @@
 
 \input{Content/Introducao}
 \input{Content/Desenvolvimento}
+\input{Content/Reflexao}
 
 \newpage
 \section{Referências Bibliográficas}

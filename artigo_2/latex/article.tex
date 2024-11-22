@@ -19,10 +19,14 @@
 \newcommand\myshade{85}
 \newcommand{\pprime}{\ensuremath{^{\prime}}}
 \newcommand{\RNum}[1]{\uppercase\expandafter{\romannumeral #1\relax}}
+\providecommand{\keywords}[1]{%
+  \small
+  \textbf{\textit{\iflanguage{english}{Keywords}{Palavras-chave} ---}} #1%
+}
 
 \hypersetup{
     pdftitle   = {Consequências da dependência tecnológica do indivíduo moderno - Um ensaio analítico e reflexão sobre perspectivas futuras},
-    pdfauthor  = {Autor Anônimo},
+    pdfauthor  = {Pedro Santi Binotto},
     pdfsubject = {Este artigo tem como propósito explorar as consequências associadas à crescente dependência tecnológica
     do indivíduo moderno na sociedade contemporânea.},
     linkcolor  = black,
@@ -62,7 +66,7 @@
   Consequências da dependência tecnológica do indivíduo moderno\\
   \large Um ensaio analítico e reflexão sobre perspectivas futuras
 }
-\author[1]{Autor Anônimo}
+\author[1]{Pedro Santi Binotto [20200634]\thanks{\texttt{pedro.binotto@grad.ufsc.br}}}
 \date{\today}
 \affil[1]{Departamento de Informática e Estatística, Universidade Federal de Santa Catarina}
 
@@ -82,6 +86,8 @@
   autonomia do indivíduo e sua escolha em ativamente exercer suas funções na sociedade de forma saudável.
 \end{abstract}
 
+\keywords{Tecnologia, Saúde Mental, Autonomia, Liberdade Individual}
+
 \end{titlepage}
 
 \tableofcontents
@@ -95,7 +101,7 @@
 \input{Content/Reflexao}
 
 \newpage
-\section{Referências Bibliográficas}
+\section{Bibliografia}
 \bibliographystyle{apalike}
 \bibliography{references}
 
